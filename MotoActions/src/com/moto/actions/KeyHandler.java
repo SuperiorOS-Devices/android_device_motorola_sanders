@@ -469,7 +469,7 @@ public class KeyHandler implements DeviceKeyHandler {
                 processFPScancode(scanCode);
             }
         }
-                return true;
+                return null;
             }
 
 	    public boolean canHandleKeyEvent(KeyEvent event) {
