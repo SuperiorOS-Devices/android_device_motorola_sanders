@@ -419,10 +419,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.dha_lmk_scale=0.545 \
     ro.config.dha_th_rate=2.3 \
     ro.config.sdha_apps_bg_max=64 \
-    ro.config.sdha_apps_bg_min=8
+    ro.config.sdha_apps_bg_min=8 \
     ro.zram.mark_idle_delay_mins=60 \
     ro.zram.first_wb_delay_mins=180 \
     ro.zram.periodic_wb_delay_hours=24 \
+    drm.service.enabled=true \
+    media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
