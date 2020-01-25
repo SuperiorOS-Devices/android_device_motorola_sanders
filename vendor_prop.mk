@@ -136,10 +136,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
     debug.sf.hw=0 \
     debug.sf.latch_unsignaled=0 \
-    debug.sf.early_phase_offset_ns=1500000 \
-    debug.sf.early_app_phase_offset_ns=1500000 \
-    debug.sf.early_gl_phase_offset_ns=3000000 \
-    debug.sf.early_gl_app_phase_offset_ns=15000000 \
+    debug.sf.early_phase_offset_ns=5000000 \
     persist.hwc.mdpcomp.enable=true \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
@@ -156,10 +153,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.display.disable_skip_validate=1
-
-# Enable backpressure for GL comp
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_gl_backpressure=1
 
 # Enable Perfetto traced and heapprofd
     persist.traced.enable=1 \
@@ -209,7 +202,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
     media.settings.xml=/vendor/etc/media_profiles.xml \
     mm.enable.qcom_parser=135715 \
-    ro.surface_flinger.protected_contents=false \
+    ro.surface_flinger.protected_contents=true \
     mm.enable.sec.smoothstreaming=true \
     mm.enable.smoothstreaming=true \
     mmp.enable.3g2=true
