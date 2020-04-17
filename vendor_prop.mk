@@ -432,6 +432,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.input.video_enabled=false
 
+# Tweaks for battery saving
+PRODUCT_PROPERTY_OVERRIDES += \
+   pm.sleep_mode=1 \
+   usb_wakeup=enable \
+   proximity_incall=enable \
+   power_supply.wakeup=enable \
+   ro.config.hw_power_saving=1 \
+   ro.config.hw_fast_dormancy=1 \
+   ro.config.hw_quickpoweron=true \
+   persist.sys.use_dithering=0
+
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.vendor.shutdown.waittime=500
