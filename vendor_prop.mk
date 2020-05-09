@@ -169,8 +169,7 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.qc2.use.bqpool=1
 
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.fm.transmitter=false \
-    vendor.hw.fm.init=0
+    ro.fm.transmitter=false
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
