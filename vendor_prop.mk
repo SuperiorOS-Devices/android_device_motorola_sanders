@@ -407,10 +407,6 @@ persist.dbg.vt_avail_ovr=1 \
 persist.dbg.wfc_avail_ovr=1 \
 persist.radio.data_lte_sys_ind=1
 
-# Create Swap disk, if below sys-prop enabled & also if device has lower (< 1 GB) RAM
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.data_lte_sys_ind=1
-
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.fha_enable=true \
@@ -429,7 +425,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-        ro.superior.maintainer=Mayur Varde
+        ro.superior.maintainer=Mayur-Varde
 
 # Disable touch heatmap
 PRODUCT_PROPERTY_OVERRIDES += \
