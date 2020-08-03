@@ -31,6 +31,9 @@ $(call inherit-product, vendor/superior/config/common.mk)
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Launcher
+TARGET_LAUNCHER := oplauncher
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
 PRODUCT_NAME := superior_sanders
